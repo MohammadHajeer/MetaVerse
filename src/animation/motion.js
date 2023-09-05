@@ -124,12 +124,13 @@ export const planetVariants = (direction) => ({
 
 export const zoomIn = (delay, duration) => ({
   hidden: {
-    scale: 0,
+    width: 0,
+    height: 0,
     opacity: 0,
-    x: -100
   },
   visible: {
-    scale: 1,
+    width: 155,
+    height: 155,
     opacity: 1,
     transition: {
       type: "tween",
@@ -137,7 +138,6 @@ export const zoomIn = (delay, duration) => ({
       duration,
       ease: "easeOut",
     },
-    x: -100
   },
 });
 
